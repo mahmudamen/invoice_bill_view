@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+   <templates id="template" xml:space="preserve">
+        <t t-name="Invoicedashboard" t-extend="Invoicedashboard">
+            <t t-jquery=".accounts-dashboard-wrap" t-operation="append">
+                    <div class="col-md-4" id="col-graph">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <b>
+                                        <h3 class="custom-h3">INVOICES</h3>
+                                    </b>
+                                </div>
+                                <div class="card-tools">
+                                    <select id="invoice_values">
+                                        <option id="invoice_bill_this_month" value="this_month">This Month</option>
+                                        <option id="invoice_bill_this_year" value="this_year">This Year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body" id="">
+                                <div class="row">
+                                    <div class="col-md-12 mt-3">
+                                        <h1 class="custom-h1" style="margin-bottom: 0;">Customer Invoice</h1>
+                                        <ul class="skill-list">
+                                            <li class="skill" style="display: flex;justify-content: space-between;color: #000;">
+                                                <p id="total_customer_invoice_paid" />
+                                                <p id="total_customer_invoice" />
+                                                <p id="total_customer_invoice_paid_current_year" />
+                                                <p id="total_customer_invoice_current_year" />
+                                                <p id="total_customer_invoice_paid_current_month" />
+                                                <p id="total_customer_invoice_current_month" />
+                                            </li>
+                                            <li>
+                                                <progress id="tot_invoice" class="skill-1" max="" value="">
+                                                    <strong>Skill Level: 50%</strong>
+                                                </progress>
+                                            </li>
+                                            <li>
+                                                <progress id="tot_invoice_current_year" class="skill-1" max="" value="">
+                                                    <strong>Skill Level: 50%</strong>
+                                                </progress>
+                                            </li>
+                                            <li>
+                                                <progress id="tot_invoice_current_month" class="skill-1" max="" value="">
+                                                    <strong>Skill Level: 50%</strong>
+                                                </progress>
+                                            </li>
+                                        </ul>
+                                        <div role="separator" class="dropdown-divider" />
+                                        <h1 class="custom-h1" style="margin-bottom: 0;">Supplier Invoice</h1>
+                                        <ul class="skill-list">
+                                            <li class="skill" style="display: flex;justify-content: space-between;color: #000;">
+                                                <p id="total_supplier_invoice_paid"/>
+                                                <p id="total_supplier_invoice" />
+                                                <p id="total_supplier_invoice_paid_current_year"/>
+                                                <p id="total_supplier_invoice_current_year" />
+                                                <p id="total_supplier_invoice_paid_current_month"/>
+                                                <p id="total_supplier_invoice_current_month" />
+                                            </li>
+                                            <li>
+                                                <progress id="tot_supplier_inv" class="skill-1" max="" value="">
+                                                    <strong>Skill Level: 50%</strong>
+                                                </progress>
+                                            </li>
+                                            <li>
+                                                <progress id="tot_supplier_inv_current_year" class="skill-1" max="" value="">
+                                                    <strong>Skill Level: 50%</strong>
+                                                </progress>
+                                            </li>
+                                            <li>
+                                                <progress id="tot_supplier_inv_current_month" class="skill-1" max="" value="">
+                                                    <strong>Skill Level: 50%</strong>
+                                                </progress>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ </t>
+        </t>
+    </templates>
+    </data>
+</odoo>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets" inherit_id="base_accounting_kit.assets_invoice_dashboard" name="point_of_sale assets">
+            <xpath expr="." position="inside">
+             
+                <script type="text/javascript" src="/invoice_bill_view/static/src/js/dashboard.js"/>
+                <script type="text/javascript" src="/invoice_bill_view/static/src/js/temp.js"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>
